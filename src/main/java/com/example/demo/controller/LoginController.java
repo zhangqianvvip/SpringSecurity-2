@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class LoginController {
@@ -28,5 +29,21 @@ public class LoginController {
 	@GetMapping({"/db/2"})
 	public String db2() {
 		return "db 2";
+	}
+	@PostMapping({"/logout"})
+	public String logout() {
+		return "logout";
+	}
+	@GetMapping({"/logoutsuccess"})
+	public String logoutsuccess() {
+		return "logoutsuccess";
+	}
+	@GetMapping("/login")
+	public String login() {
+		return "login";
+	}
+	@PostMapping("/about")
+	public String login1() {
+		return "logout";
 	}
 }
